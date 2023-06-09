@@ -77,9 +77,9 @@ Use this to go through Pentair servers.
 
 - `"hideAirTemperatureSensor"` hides the air temperature sensor. Default is `false`.
 
-- `"hidePoolTemperatureSensor"` hides the pool temperature sensor, which is redundant if you are showing pool thermostat. Default is `false`.
+- `"hidePoolTemperatureSensor"` hides the pool temperature sensor, which is redundant if you are showing pool thermostat. Default is `true`.
 
-- `"hideSpaTemperatureSensor"` hides the spa temperature sensor, which is redundant if you are showing spa thermostat. Default is `false`.
+- `"hideSpaTemperatureSensor"` hides the spa temperature sensor, which is redundant if you are showing spa thermostat. Default is `true`.
 
 - `"hidePoolThermostat"` hides the pool thermostat (aka, pool heater) if you don't want to allow changes via HomeKit. Default is `false`.
 
@@ -138,28 +138,9 @@ Use this to go through Pentair servers.
 
 - _Light Colors_ accessory with multiple switches for setting a light mode/color. See also [Note on Light Colors](#note-on-light-colors)
 
-# Note on Pool/Spa Heater
+# "On" State
 
-The Pool and Spa Heater accessories are exposed as Thermostats in HomeKit. Since the semantics are slightly different between Pentair heat mode and a thermostat target heating state, a mapping is required.
-
-## Mapping
-
-I picked the following mapping, which seemed like the most logical mapping:
-
-| Pentair Heat Mode | Thermostat State |
-| ----------------- | ---------------- |
-| Off               | Off              |
-| Heater            | Heat             |
-| Solar Preferred   | Auto             |
-| Solar             | Cool             |
-
-The only strange one is mapping `Solar` to `Cool`. I decided to go that route given the first three were fairly obvious (to me at least).
-
-An alternative would be to expose three distinct on/off switches that represent each mode, and then ignore state changes (and maybe just allowing Off/Heat).
-
-## "On" State
-
-The other compromise is that the pool and spa heaters do _not_ turn the pool and/or spa on or off, they just change the heat mode.
+Pool and spa heaters do _not_ turn the pool and/or spa on or off, they just change the heat mode.
 
 i.e., if you want to heat the spa, you need to do two things:
 
