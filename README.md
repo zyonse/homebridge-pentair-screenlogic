@@ -22,7 +22,7 @@ This plugin was recently rewritten in Typescript to use the latest capabilities 
 <!-- 2. Clone (or pull) this repository from github into the same path Homebridge lives (usually `/usr/local/lib/node_modules`). Note: the code currently on GitHub is in beta, and is newer than the latest published version of this package on `npm` -->
 
 1. Install homebridge using: `npm install -g homebridge`
-2. Install this plug-in using: `npm install -g homebridge-screenlogic`
+2. Install this plug-in using: `npm install -g homebridge-pentair-screenlogic`
 3. Update your configuration file. See example `config.json` snippet below.
 
 ## Configuration
