@@ -1,6 +1,6 @@
 {
-  "displayName": "Homebridge Screenlogic",
-  "name": "homebridge-screenlogic",
+  "displayName": "Homebridge Pentair Screenlogic",
+  "name": "homebridge-pentair-screenlogic",
   "version": "2.2.1",
   "description": "Plugin for Pentair Screenlogic Controllers",
   "repository": {
@@ -15,7 +15,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/schemers/homebridge-screenlogic/issues"
+    "url": "https://github.com/zyonse/homebridge-pentair-screenlogic/issues"
   },
   "engines": {
     "node": ">=10.17.0",
