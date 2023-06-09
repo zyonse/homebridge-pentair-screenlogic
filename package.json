@@ -5,7 +5,7 @@
   "description": "Plugin for Pentair Screenlogic Controllers",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schemers/homebridge-screenlogic.git"
+    "url": "git+https://github.com/zyonse/homebridge-pentair-screenlogic.git"
   },
   "keywords": [
     "homebridge-plugin",
