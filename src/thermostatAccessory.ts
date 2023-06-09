@@ -66,7 +66,7 @@ export class ThermostatAccessory {
       .getCharacteristic(this.platform.Characteristic.TargetTemperature)
       .on('set', this.setTargetTemperature.bind(this))
 
-    // register handlers for the TargetTemperature Characteristic
+    // register handlers for the TargetHeatingCoolingState Characteristic
     this.service
       .getCharacteristic(this.platform.Characteristic.TargetHeatingCoolingState)
         .setProps({
