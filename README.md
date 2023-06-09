@@ -1,14 +1,12 @@
-# homebridge-screenlogic
+# homebridge-pentair-screenlogic
 
-[![NPM version](https://img.shields.io/npm/v/homebridge-screenlogic)](https://npmjs.org/package/homebridge-screenlogic)
-![License](https://img.shields.io/npm/l/homebridge-screenlogic)
-[![Downloads](https://img.shields.io/npm/dm/homebridge-screenlogic.svg)](https://npmjs.org/package/homebridge-screenlogic)
+[![NPM version](https://img.shields.io/npm/v/homebridge-pentair-screenlogic)](https://npmjs.org/package/homebridge-pentair-screenlogic)
+![License](https://img.shields.io/npm/l/homebridge-pentair-screenlogic)
+[![Downloads](https://img.shields.io/npm/dt/homebridge-pentair-screenlogic.svg)](https://npmjs.org/package/homebridge-pentair-screenlogic)
 
-## Note
+Fork of homebridge-pentair by schemers, with some of my own fixes.
 
-I no longer have a Screen Logic controller, so I not maintaing/updating this plugin as of 6/11/21. If someone wants to fork and maintain I can update this REAMDE to point to a new repository.
-
-## Screen Logic plug-in for [Homebridge](https://github.com/nfarina/homebridge) using the [node-screenlogic](https://github.com/parnic/node-screenlogic) library.
+## ScreenLogic plug-in for [Homebridge](https://github.com/nfarina/homebridge) using the [node-screenlogic](https://github.com/parnic/node-screenlogic) library.
 
 <img src="https://user-images.githubusercontent.com/249172/86522408-04f3d980-be12-11ea-8fc2-e85904a8b415.png" width="300"> <img src="https://user-images.githubusercontent.com/249172/86522409-0a512400-be12-11ea-8c9f-4165e9fe76a5.png" width="300">
 
@@ -183,7 +181,7 @@ Since I don't have the ability to query the current state of which color/mode is
 1. light mode/color switch is turned on (i.e., Pool Mode Sunset)
 1. light command is sent to Screenlogic controller
 1. after a few seconds, the same switch is turned off to give feedback that the command was sent
-1. all pool/spa lights will be turned on (if they aren't already), and set to that mode/color. This is done by the screen logic controller itself.
+1. all pool/spa lights will be turned on (if they aren't already), and set to that mode/color. This is done by the screenlogic controller itself.
 
 ## Single Tile
 
