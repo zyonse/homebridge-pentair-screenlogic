@@ -300,7 +300,7 @@ export class Controller {
 export class ControllerError extends Error {}
 
 export class PoolCircuit {
-  constructor(public readonly id: number, public readonly name: string) {}
+  constructor(public readonly id: number, public readonly name: string, public readonly category: number) {}
 }
 
 export class PoolConfig {
@@ -332,7 +332,7 @@ export class PoolConfig {
     this.hasPool = false
     this.circuits = []
     for (const circuit of config.bodyArray) {
-      const poolCircuit = new PoolCircuit(circuit.circuitId, circuit.name)
+      const poolCircuit = new PoolCircuit(circuit.circuitId, circuit.name, circuit.interface)
       this.circuits.push(poolCircuit)
       if (poolCircuit.id === Controller.POOL_CIRCUIT_ID) {
         this.hasPool = true

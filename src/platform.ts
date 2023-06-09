@@ -199,12 +199,15 @@ export class ScreenLogicPlatform implements DynamicPlatformPlugin {
     })
 
     for (const circuit of poolConfig.circuits) {
-      const accessory = this.configureAccessoryType(CircuitAccessory.makeAdaptor(), {
-        displayName: circuit.name,
-        id: circuit.id,
-      } as CircuitAccessoryContext)
-      this.circuitAccessories.push(accessory)
-      activeAccessories.add(accessory.UUID)
+      // ignore circuits that are hidden in ScreenLogic app
+      if (circuit.category !== 5) {
+        const accessory = this.configureAccessoryType(CircuitAccessory.makeAdaptor(), {
+          displayName: circuit.name,
+          id: circuit.id,
+        } as CircuitAccessoryContext)
+        this.circuitAccessories.push(accessory)
+        activeAccessories.add(accessory.UUID)
+      }
     }
 
     if (this.config.createLightColorSwitches) {
