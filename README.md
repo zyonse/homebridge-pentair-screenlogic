@@ -4,7 +4,7 @@
 ![License](https://img.shields.io/npm/l/homebridge-pentair-screenlogic)
 [![Downloads](https://img.shields.io/npm/dt/homebridge-pentair-screenlogic.svg)](https://npmjs.org/package/homebridge-pentair-screenlogic)
 
-Fork of homebridge-pentair by schemers, with some of my own fixes.
+Fork of [schemers/homebridge-screenlogic](https://github.com/schemers/homebridge-screenlogic) with some of my own improvements and fixes.
 
 ## ScreenLogic plug-in for [Homebridge](https://github.com/nfarina/homebridge) using the [node-screenlogic](https://github.com/parnic/node-screenlogic) library.
 
