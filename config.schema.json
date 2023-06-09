@@ -45,13 +45,13 @@
       "hidePoolTemperatureSensor": {
         "title": "Hide Pool Temperature Sensor",
         "type": "boolean",
-        "default": false,
+        "default": true,
         "description": "Hides the pool temperature sensor, which is redundant if you are showing pool thermostat."
       },
       "hideSpaTemperatureSensor": {
         "title": "Hide Spa Temperature Sensor",
         "type": "boolean",
-        "default": false,
+        "default": true,
         "description": "Hides the spa temperature sensor, which is redundant if you are showing spa thermostat."
       },
       "hideAirTemperatureSensor": {
