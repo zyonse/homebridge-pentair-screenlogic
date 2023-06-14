@@ -1,5 +1,5 @@
 # homebridge-pentair-screenlogic
-
+[![verified-by-homebridge](https://badgen.net/badge/homebridge/verified/purple)](https://github.com/homebridge/homebridge/wiki/Verified-Plugins)
 [![NPM version](https://img.shields.io/npm/v/homebridge-pentair-screenlogic)](https://npmjs.org/package/homebridge-pentair-screenlogic)
 ![License](https://img.shields.io/npm/l/homebridge-pentair-screenlogic)
 [![Downloads](https://img.shields.io/npm/dt/homebridge-pentair-screenlogic.svg)](https://npmjs.org/package/homebridge-pentair-screenlogic)
