@@ -96,6 +96,7 @@
           "title": "Mode",
           "type": "string",
           "enum": [
+            "Pool Mode Off",
             "Pool Mode Party",
             "Pool Mode Romance",
             "Pool Mode Caribbean",
